@@ -1,0 +1,155 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#f5f8fa;
+
+}
+
+.m5-c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+ 
+    border-radius: 10px;
+}
+
+.on-bilgi {
+
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+.arac-cubugu {
+    position: relative;
+
+}
+
+.cevap-kutusu {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+
+}
+
+.tutucu {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.okuma-testi-metin {
+    position: relative;
+    
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.okuma-testi-metin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4, transparent);
+    animation: animate 1s linear infinite;
+}
+
+.bilgi-cubugu {
+    margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes goster-button {
+    0% {
+        top: -100%;
+      }
+      50%,100% {
+        top: 100%;
+      }
+}
+
+.goster-button:hover {
+    background: #03e9f4;
+    color: #fff;
+}
+
+.calis-bilgiler {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes mavi-button {
+    0% {
+        right: -100%;
+      }
+      50%,100% {
+        right: 100%;
+      }
+}
+
+.span {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+
+.cevap-kutusu {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #1e1e2d;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: #e95e3a;
+    outline: none;
+
+
+}
+

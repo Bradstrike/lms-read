@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Libre+Franklin" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <link rel="stylesheet" type="text/css" href="../plugins.bundle.css">
+  <link rel="stylesheet" type="text/css" href="../style.bundle.css">
+</head>
+<body>
+	<div class="app-header">
+		<div id="settingsBar">
+			<div id="color1" class="colorBox"></div>
+			<div id="color2" class="colorBox" style=" margin-color:gray; margin: 1px;"></div>
+			<div id="color3" class="colorBox"></div>
+			<div id="color4" class="colorBox"></div>
+			<div id="color5" class="colorBox"></div>
+
+			<div id="speedBar">
+				<label for="speedTb">Speed (wpm): </label>
+				<input id="speedTb" name="speedTb" type="text" value="150" />
+			</div>
+
+			<p id="readCountLbl">0/0 words</p>
+			<div>
+				<button id="pickerBtn" class="btn btn-sm fw-bold btn-primary">Read file</button>
+				<input id="picker" type="file" />
+				<button id="cancelBtn" class="btn btn-sm fw-bold btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>	
+<div>
+	<img id="toggleReadBarBtn" alt="down-arrow" src="img/down-arrow.png" />
+	<div id="readBar" class="text-center navbar-fixed">
+		<textarea id="searchTb" placeholder="What text do you want to speed read?">Ben bir robotum. Geçen yıl Can isimli bir çocuğa doğum gününde armağan edildim. Can kumral, çilli, gözlüklü 7 yaşında, en sevdiği yemek köfte. Can’ın bir başka en sevdiği şey de uyumadan önce ona hikayeler anlatmam. İki gün önce birlikte gittiğimiz bir piknikte Can hastalandı, onu aceleyle hastaneye götürdükleri için beni unuttular. Şarjım bitmek üzere, şimdi son kalan enerjimle bu satırları sizlere iletiyorum, lütfen Can adında kumral, çilli, gözlüklü 7 yaşında, en sevdiği yemek köfte olan bir çocuk tanıyorsanız ona bu mesajımı iletin, beni bulsun. Hikaye dinlemeden uyuyamaz, biliyorum, Can’ı tanıyorum, ben onun en yakın dostuyum.</textarea>
+		<br>
+		<button id="readBtn" class="btn btn-sm fw-bold btn-primary">Read</button>
+	</div>
+	
+	<div class="container-fluid" style="display: flex; justify-content: center; align-items: center; padding-top: 100px;">
+		<div id="readView" class="row">
+			<p id="wordLbl">Hızlı Okuma</p>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+

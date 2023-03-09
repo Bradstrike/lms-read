@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: none;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+
+#bostima-app {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: none;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.bostima-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: red;
+    margin: 0 auto;
+    background: none;
+    background: none;
+    padding: 10px;
+}
+#settings {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: -350px;
+    width: 350px;
+    background: none;
+    background:none;
+    border: 3px solid #ddd;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+.menu-button {
+    cursor: pointer;
+    position: relative;
+    height: 38px;
+    line-height: 32px;
+    font-weight: bold;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: #fff;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.menu-button:hover {
+    background-color: #f6f6f6;
+}
+.arrow-button {
+    cursor: default;
+    position: relative;
+    height: 38px;
+    line-height: 32px;
+    font-weight: bold;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: #fff;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.button-toggles {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+.button-toggles.open {
+    background: #c5d0c2;
+}
+.button-toggles.close {
+    background: #d6c9ca;
+}
+.button-toggles div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    border-radius: 8px;
+}
+.button-toggles.open div {
+    right: 2px;
+    background: #6c8865;
+}
+.button-toggles.close div {
+    left: 2px;
+    background: #97777a;
+}
+
+.add-button,
+.remove-button,
+.left-button,
+.right-button {
+    cursor: pointer;
+    float: left;
+    border-left: 3px solid #ddd;
+    height: 32px;
+    width: 33px;
+    background: center center no-repeat;
+    background-size: 70%;
+}
+
+.add-button {
+    background-image: url(add.svg);
+}
+.remove-button {
+    background-image: url(remove.svg);
+}
+
+.add-button:hover,
+.remove-button:hover,
+.left-button:hover,
+.right-button:hover {
+    background-color: none;
+}
+
+.iconic {
+    height: 20px;
+    width: 20px;
+    background: center center no-repeat;
+    background-size: 100%;
+    margin: 4px;
+}
+
+.maya {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#karanlik {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2) !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998 !important;
+}
+
+/* PONTE MEDIA */
+@media (max-device-width: 500px) {
+    #bostima-app {
+        padding: 2px;
+    }
+    .bostima-container {
+        padding: 2px;
+    }
+}

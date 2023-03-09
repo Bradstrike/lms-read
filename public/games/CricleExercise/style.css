@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --kt-page-bg: none;  /*Style.bundle.css in background a etki ettiği stil*/
+}
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+    overflow-y: scroll;
+    background: none;
+}
+#bostima-app {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    overflow: hidden;
+    background: none;
+}
+.bostima-app-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#bostima-app-insider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#settings {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: -350px;
+    width: 350px;
+    background: #112d4e;
+    border: 3px solid #112d4e;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.settings-head {
+    height: 42px;
+    line-height: 38px;
+    border-bottom: 3px solid #ddd;
+    background: #fafafa;
+    color: #888;
+    padding-left: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu-button {
+    cursor: pointer;
+    position: relative;
+    height: 38px;
+    line-height: 32px;
+    font-weight: bold;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: #fff;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.menu-button:hover {
+    background-color: #f6f6f6;
+}
+.arrow-button {
+    cursor: default;
+    position: relative;
+    height: 38px;
+    line-height: 32px;
+    font-weight: bold;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: #fff;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.left-button,
+.right-button {
+    cursor: pointer;
+    float: left;
+    border-left: 3px solid #ddd;
+    height: 32px;
+    width: 33px;
+    background: center center no-repeat;
+    background-size: 70%;
+}
+.left-button {
+    background-image: url(/tr/on-parmak/hedefli-klavye-calismasi/double-arrow-l.svg);
+}
+.right-button {
+    background-image: url(/tr/on-parmak/hedefli-klavye-calismasi/double-arrow-r.svg);
+}
+.left-button:hover,
+.right-button:hover {
+    background-color: #f6f6f6;
+}
+.button-toggles {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+.button-toggles.open {
+    background: #c5d0c2;
+}
+.button-toggles.close {
+    background: #d6c9ca;
+}
+.button-toggles div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+.button-toggles.open div {
+    left: 22px;
+    background: #6c8865;
+}
+.button-toggles.close div {
+    left: 2px;
+    background: #97777a;
+}
+.iconic {
+    height: 20px;
+    width: 20px;
+    background: center center no-repeat;
+    background-size: 100%;
+    margin: 4px;
+}
+.icon-volume-on {
+    background-image: url(/tr/on-parmak/hedefli-klavye-calismasi/volume-on.svg);
+}
+.icon-volume-off {
+    background-image: url(/tr/on-parmak/hedefli-klavye-calismasi/volume-off.svg);
+}
+.dropdown-container {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    height: 38px;
+    line-height: 32px;
+    font-weight: bold;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: #fff;
+    color: #888;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.dropdown:hover {
+    background-color: #f6f6f6;
+}
+.dropdown .arrow {
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+    background: url(/tr/on-parmak/hedefli-klavye-calismasi/drop-down.svg) center center no-repeat;
+    background-size: 100%;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    min-width: 100%;
+    z-index: 101;
+    border: 3px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #888;
+    text-transform: uppercase;
+}
+.dropdown-menu div {
+    padding: 0 20px 0 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.dropdown-menu div:hover {
+    background: #f6f6f6;
+}
+.maya {
+    max-width: 800px;
+    margin: 20px auto;
+}
+#information,
+#complated {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9996;
+}
+#completed {
+    display: none;
+}
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+.button-group div,
+.button-group a {
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+    line-height: 38px;
+    background: #009ef7;
+    color: #dadada;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 0 3px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.button {
+    cursor: pointer;
+    background: #fff;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background-color: #f6f6f6;
+}
+#karanlik {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2) !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998 !important;
+}
+.bottom-left-count {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #647687;
+    color: white;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+}

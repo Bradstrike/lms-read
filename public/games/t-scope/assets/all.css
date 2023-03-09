@@ -1,0 +1,139 @@
+*{margin:0;padding:0;box-sizing:border-box}
+a,a:hover,a:visited{text-decoration:none}
+body{background:#f5f8fa;font-size:16px;font-family:"Segoe UI","Helvetica Neue",Helvetica,sans-serif;overflow-y:scroll}
+.t{clear:both;float:none;margin:0;padding:0;border:none;font-size:0;height:0px}.s{overflow:hidden;display:table}
+
+.aaa{height:34px;background:#f5f8fa;width:100%;}
+.aaa.m5{border-bottom:2px solid #324F68}
+.aaa.onparmak{border-bottom:2px solid #324F68}
+.aaa.hizliokuma{border-bottom:2px solid #39434C}
+.aaa.hesaplamalar{border-bottom:2px solid #32685D}
+.aaa.araclar{border-bottom:2px solid #683335}
+.aaa.webokulu{border-bottom:2px solid #416A34}
+.aaa.tarihtebugun{border-bottom:2px solid #424B72}
+.aaa.bilgibankasi{border-bottom:2px solid #3E4C39}
+.a1{width:32px;height:32px;background:url(/_img/icon-m5bilisim.png) center center no-repeat;background-size:50%;float:left}
+.aaa.m5 .a1{background-color:#324F68}
+.a1:hover{background-color:#323232}
+.a3{position:relative;float:left;overflow:hidden}
+.a3 a{position:relative;background:#232323;padding:0 12px;font-size:13px;height:32px;line-height:32px;color:#aaa;float:left;z-index:1;transition:color .3s ease}
+.a3 a:hover{color:#fff}
+.aaa.onparmak .a3 a.ak{background:#324F68;color:white}
+.aaa.hizliokuma .a3 a.ak{background:#39434C;color:white}
+.aaa.hesaplamalar .a3 a.ak{background:#32685D;color:white}
+.aaa.araclar .a3 a.ak{background:#683335;color:white}
+.aaa.webokulu .a3 a.ak{background:#416A34;color:white}
+.aaa.tarihtebugun .a3 a.ak{background:#424B72;color:white}
+.aaa.bilgibankasi .a3 a.ak{background:#3E4C39;color:white}
+/*.a3 a:hover{background:#598BB7;color:#fff}*/
+.a3 a:hover:before{height:4px}
+.a4{float:right;text-transform:uppercase;font-size:12px;color:#fff;background:#598BB7;height:32px;line-height:32px;padding:0 20px;transition:background .3s ease}
+.a4:hover{background:#43698A}
+.aaa.onparmak .a4{background:#598BB7}.aaa.onparmak .a4:hover{background:#43698A}
+.aaa.hizliokuma .a4{background:#647687}.aaa.hizliokuma .a4:hover{background:#4B5966}
+.aaa.hesaplamalar .a4{background:#59B7A5}.aaa.hesaplamalar .a4:hover{background:#438A7D}
+.aaa.araclar .a4{background:#90696A}.aaa.araclar .a4:hover{background:#6D4F50}
+.aaa.webokulu .a4{background:#72BB5B}.aaa.webokulu .a4:hover{background:#568D45}
+.aaa.tarihtebugun .a4{background:#7484CA}.aaa.tarihtebugun .a4:hover{background:#586498}
+.aaa.bilgibankasi .a4{background:#6D8764}.aaa.bilgibankasi .a4:hover{background:#52664B}
+
+
+.aa{position:relative;overflow:hidden;width:100%;height:41px;background:#2a2a2a;text-align:center;border-bottom:1px solid #000}
+.ab{float:left;line-height:40px;color:#87794e;font-weight:bold;font-size:17px;font-family:tahoma;padding:0 8px;text-transform:uppercase;transition:background .4s ease}
+.aa.m5 .ab{color:#598BB7}
+.aa.onparmak .ab{color:#598BB7}
+.aa.hizliokuma .ab{color:#647687}
+.aa.hesaplamalar .ab{color:#59B7A5}
+.aa.araclar .ab{color:#90696A}
+.aa.webokulu .ab{color:#72BB5B}
+.aa.tarihtebugun .ab{color:#7484CA}
+.aa.bilgibankasi .ab{color:#6D8764}
+.ab:hover{background-color:#323232}
+/* .ac MOBILE */
+.ac{display:none}
+.ad{position:relative;text-transform:uppercase;font-size:12px;line-height:40px;z-index:99}
+.ad a{position:relative;color:#bbb;float:left;padding:0 15px;;transition:all .3s ease}
+.ad a:hover,.ad a.ak{color:#ddd}
+.ad a span{position:absolute;background:#87794e;width:100%;bottom:0;left:0;height:0;transition:all .3s ease}
+.aa.m5 .ad a span{background:#598BB7}
+.aa.onparmak .ad a span{background:#598BB7}
+.aa.hizliokuma .ad a span{background:#647687}
+.aa.hesaplamalar .ad a span{background:#59B7A5}
+.aa.araclar .ad a span{background:#90696A}
+.aa.webokulu .ad a span{background:#72BB5B}
+.aa.tarihtebugun .ad a span{background:#7484CA}
+.aa.bilgibankasi .ad a span{background:#6D8764}
+.ad a:hover span,.ad a.ak span{height:3px}
+.ae{cursor:default;position:absolute;right:0;top:3px;line-height:42px;font-size:61px;font-weight:bold;color:rgba(255,255,255,0.05);z-index:7}
+
+.ba{height:37px;background:#323232;width:100%;padding:4px}
+.tools-left{float:left}
+.tools-right{float:right}
+.site-yolu div, .site-yolu a{position:relative;border:1px solid #000;border-left:none;padding:0 14px 0 20px;height:28px;line-height:26px;float:left;color:#b1b1b1;font-size:13px}
+.site-yolu div{cursor:default}
+.site-yolu a:hover{background:#212121}
+.site-yolu div:first-child, .site-yolu a:first-child{border-left:1px solid #000;padding-left:12px}
+.site-yolu div:after, .site-yolu a:after{content:"";position:absolute;display:inline-block;width:26px;height:26px;top:0;right:-13px;background-color:#323232;-webkit-transform:scale(0.707) rotate(45deg);transform:scale(0.707) rotate(45deg);z-index:1}
+.site-yolu a:hover:after{background:#212121}
+.site-yolu div:last-child:after, .site-yolu a:last-child:after{content:none}
+
+/* Footer */
+.zz{position:relative;width:100%;background-color:#191B1D;margin:60px 0 0 0}
+.z1{width:100%;height:5px;background:url("/_img/bar.png") repeat-x;margin-bottom:10px}
+.z2{background:url(/_svg/logo-m5bilisim.svg) center center no-repeat;background-size:100%;width:170px;height:27px;margin:0 auto}
+.z3{clear:both;padding:20px 0;text-align:center}
+.z3 a{margin:0 20px 0 0;font-size:13px;text-align:left;color:#878A8F;transition:all .3s ease-out}
+.z3 a:hover{color:#fff;transition:all .3s ease-out}
+.z4{max-width:800px;text-align:center;font-size:12px;color:#878A8F;margin:0 auto 18px}
+.z4 span{color:#2C6F9D}
+.z5{width:100%;background:#101010;height:40px;line-height:40px;color:#777;font-size:12px}
+.z5 div{width:100%;max-width:1000px;margin:0 auto}
+/* Sosyal Medya */
+.z6{cursor:default;text-align:center;margin-top:20px}
+.z6 a{display:inline-block;margin:0 1px;width:30px;height:30px;transition:background .3s ease;border-radius:1px;border:1px solid #323232}
+.z6 a.facebook{background:url(/_svg/facebook.svg) center center no-repeat;background-size:50%}
+.z6 a.twitter{background:url(/_svg/twitter.svg) center center no-repeat;background-size:50%}
+.z6 a:hover{background-color:#323232}
+.z7{width:70px;height:70px;background:url(/_svg/icon-m5bilisim.svg) center center no-repeat;background-size:100%;margin:0 auto}
+
+@media (max-device-width: 500px){
+	.aaa{height:51px;border-bottom:1px solid #303030}
+	.a1{display:block;float:none;background:url(/_svg/logo-m5bilisim.svg) center center no-repeat;background-size:96%;width:155px;height:50px;padding:0 10px;margin:0 auto}
+	.aaa.m5 .a1,{background-color:transparent}
+	.aaa,.aaa.m5,.aaa.onparmak,.aaa.hizliokuma,.aaa.hesaplamalar,.aaa.webokulu,.aaa.tarihtebugun,.aaa.bilgibankasi{border-bottom:2px solid #303030}
+	.a2{display:none;position:absolute;background:#232323;top:50px;left:0;min-width:200px;z-index:99999}
+	.a3{float:none}
+	.a3 a{display:block;width:100%;float:none;padding:0 10px;margin:0;font-size:15px;background:none;border-bottom:1px solid #666;border-right:none;height:40px;line-height:40px;color:#999}
+	a.a4{display:block;float:none;margin:10px 30px;text-align:center;border-radius:2px}
+	#a5{background:#2a2a2a url("/_svg/menu-cizgi.svg") center center no-repeat;background-size:35%;width:49px;height:49px;position:absolute;top:0;left:0;z-index:999996;transition: all 0.3s ease}
+	.a6{display:none;position:fixed;top:0;left:0;bottom:0;right:0;height:100%;background:rgba(0,0,0,0.6);z-index:99998}
+	/*#a5.open{position:fixed;left:200px;transition: all 0.3s ease}*/
+
+	.aa{height:auto;border-bottom:4px solid #87794e;background:#202020}
+	.aa.m5{border-bottom:4px solid #598BB7}
+	.aa.onparmak{border-bottom:4px solid #598BB7}
+	.aa.hizliokuma{border-bottom:4px solid #647687}
+	.aa.hesaplamalar{border-bottom:4px solid #59B7A5}
+	.aa.webokulu{border-bottom:4px solid #72BB5B}
+	.aa.tarihtebugun{border-bottom:4px solid #7484CA}
+	.aa.bilgibankasi{border-bottom:4px solid #6D8764}
+	.ab{display:block;float:none;height:56px;line-height:56px;font-size:26px;-webkit-tap-highlight-color:transparent}
+	.ac{position:relative;display:block;width:65px;height:45px;margin:5px auto 10px;background:#323232 url(/_svg/menu-cizgi.svg) center center no-repeat;background-size:30%;z-index:8}
+	.ad{position:relative;display:none;float:none;padding:10px 0;font-size:15px;line-height:34px;background:#323232;z-index:8}
+	.ad:after{content: '';display:inline-block;border-left:8px solid rgba(0, 0, 0, 0);border-right:8px solid rgba(0, 0, 0, 0);border-bottom:8px solid #323232;position:absolute;top:-8px;left:50%;margin-left:-8px}
+	.ad a{display:block;float:none;margin:0 35px}
+	.ad a.ak{background:#87794e;border-radius:4px}
+	.aa.m5 .ad a.ak{background:#598BB7}
+	.aa.onparmak .ad a.ak{background:#598BB7}
+	.aa.hizliokuma .ad a.ak{background:#647687}
+	.aa.hesaplamalar .ad a.ak{background:#59B7A5}
+	.aa.webokulu .ad a.ak{background:#72BB5B}
+	.aa.tarihtebugun .ad a.ak{background:#7484CA}
+	.aa.bilgibankasi .ad a.ak{background:#6D8764}
+	.ad a:hover span,.ad a.ak span{height:0px}
+	.ae{top:auto;bottom:-2px;left:30px}
+	
+	.ba{display:none}
+	.z3 a{display:block;margin:0 30px 10px;font-size:16px;text-align:center;background:rgba(0,0,0,0.1);padding:8px 0;margin-bottom:2px}
+	.z5 div{text-align:center}
+}
